@@ -1,6 +1,7 @@
 const express = require ('express');
 const app =express();
-port = 5000
+dotenv.config();
+port = process.env.PORT;
 
 
 app.use("/api/lines", (req, res)=>{
